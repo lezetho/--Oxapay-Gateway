@@ -2,6 +2,7 @@
 
 namespace Paymenter\Extensions\Gateways\oxapay;
 
+use App\Attributes\ExtensionMeta;
 use App\Classes\Extension\Gateway;
 use App\Helpers\ExtensionHelper;
 use App\Models\Invoice;
@@ -9,6 +10,7 @@ use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
+
 #[ExtensionMeta(
     name: 'OxaPay Gateway',
     description: 'Accept payments via OxaPay.',
